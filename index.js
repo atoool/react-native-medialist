@@ -1,6 +1,6 @@
 import { NativeModules, Platform, PermissionsAndroid } from "react-native";
 
-const MediaStore = NativeModules.Medialist;
+const Mediastore = NativeModules.Medialist;
 
 const Medialist = {
   /**
