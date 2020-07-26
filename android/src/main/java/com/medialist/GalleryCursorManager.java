@@ -56,9 +56,7 @@ public class GalleryCursorManager {
     }
 
     public static Cursor getAlbumCursor(ReactApplicationContext reactContext) {
-        String[] projection = new String[] { MediaStore.Images.ImageColumns.BUCKET_DISPLAY_NAME,
-                MediaStore.Images.ImageColumns.BUCKET_ID, MediaStore.Images.ImageColumns.DATE_MODIFIED,
-                MediaStore.Images.ImageColumns.DATA, MediaStore.Video.VideoColumns.BUCKET_DISPLAY_NAME,
+        String[] projection = new String[] { MediaStore.Video.VideoColumns.BUCKET_DISPLAY_NAME,
                 MediaStore.Video.VideoColumns.BUCKET_ID, MediaStore.Video.VideoColumns.DATE_MODIFIED,
                 MediaStore.Video.VideoColumns.DATA, "count(_data) as assetCount" };
 
