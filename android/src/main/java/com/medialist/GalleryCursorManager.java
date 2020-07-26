@@ -62,8 +62,7 @@ public class GalleryCursorManager {
 
         ContentResolver contentResolver = reactContext.getContentResolver();
         Uri queryUri = MediaStore.Files.getContentUri("external");
-        String BUCKET_GROUP_BY = MediaStore.Files.FileColumns.MEDIA_TYPE + "="
-                + MediaStore.Files.FileColumns.MEDIA_TYPE_IMAGE + " OR " + MediaStore.Files.FileColumns.MEDIA_TYPE + "="
+        String BUCKET_GROUP_BY =  MediaStore.Files.FileColumns.MEDIA_TYPE + "="
                 + MediaStore.Files.FileColumns.MEDIA_TYPE_VIDEO + " and 1) GROUP BY 1,(2";
 
         return contentResolver.query(queryUri, projection, BUCKET_GROUP_BY, null, null);
